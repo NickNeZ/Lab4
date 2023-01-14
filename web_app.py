@@ -12,8 +12,7 @@ def pr_token():
         id = file.read()
     return id
 
-
-
+##
 def filter():
     files = os.listdir(r'F:\python\Git\Lab5')
     result = [0]
@@ -23,7 +22,7 @@ def filter():
             filename = filename.replace('.json','')
             result.append(filename)
     return sorted(list(map(int,result)))
-
+##
 def create():
     files = filter()
     name = int(files[len(files)-1])+1
